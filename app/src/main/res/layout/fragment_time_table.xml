@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeTable">
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ttlayout"
+        android:layout_below="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/newColor"
+        android:paddingVertical="5dp"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Day"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+
+        <TextView
+            android:id="@+id/lunch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Lunch Timings"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/t3layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ttlayout"
+        android:layout_marginTop="10dp"
+        android:background="@color/newColor"
+        android:paddingVertical="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Time"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="Subject"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/t2layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3layout"
+        android:layout_marginTop="10dp"
+        android:background="@color/newColor"
+        android:paddingVertical="5dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/lec1"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="15dp"
+            android:text="09:00-10:00" />
+
+    <TextView
+        android:id="@+id/sub1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="Subject 1"
+        android:textSize="15dp" />
+
+
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/lec2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lec1"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="15dp"
+            android:text="10:00-11:00" />
+
+        <TextView
+            android:id="@+id/lec3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lec2"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="15dp"
+            android:text="11:00-12:00" />
+
+        <TextView
+            android:id="@+id/lec4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lec3"
+            android:textSize="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="12:00-1:00" />
+
+        <TextView
+            android:id="@+id/lec5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lec4"
+            android:textSize="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="02:00-03:00" />
+
+        <TextView
+            android:id="@+id/lec6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lec5"
+            android:textSize="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="03:00-04:00" />
+
+        <TextView
+            android:id="@+id/lec7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lec6"
+            android:textSize="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="04:00-05:00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2layout"
+        android:layout_marginVertical="3dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ttrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

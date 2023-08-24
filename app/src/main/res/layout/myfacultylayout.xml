@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backcolor"
+    android:paddingVertical="5dp"
+    android:gravity="center_vertical"
+    android:layout_marginVertical="2dp">
+
+
+    <LinearLayout
+        android:id="@+id/headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:background="@color/newColor"
+        android:weightSum="12">
+
+        <TextView
+            android:id="@+id/cid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Course Id"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+
+        <TextView
+            android:id="@+id/cname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Course Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+
+        <TextView
+            android:id="@+id/facultyname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Faculty Name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
